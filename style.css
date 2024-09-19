@@ -1,0 +1,541 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville:ital@1&family=Mooli&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    width: 95%;
+    height: 90vh;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+
+ 
+header nav{
+    width: 95%;
+    height: 7vh;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li{
+    padding: 3px 15px;
+    
+}
+
+header nav ul li:nth-last-child(1){
+    background: black;
+    border-radius: 20px;
+    /* padding: 5px 20px; */
+}
+
+header nav ul li:nth-last-child(1) a{
+    color: white;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-size: 15px;
+    font-weight: 500;
+    transition: .3s linear;
+}
+
+header nav ul li a:hover{
+    color: gray;
+}
+
+header nav .bi-three-dots {
+    display: none;
+}
+.active {
+    display: flex;
+}
+
+
+
+
+header .content {
+    position: relative;
+    width: 100%;
+    height: 93%;
+    /* border: 1px solid black; */
+}
+
+header .content::before {
+    content: '';
+    position:absolute;
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid black; */
+    background: url('./images/backgorund4.jpg')no-repeat center center/cover;
+    border-radius: 10px;
+    z-index: -1;
+}
+header .content .cont_bx {
+    width: 500px;
+    height: auto;
+    color: white;
+    padding: 30px;
+}
+header .content .cont_bx h1{
+    line-height: 50px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+header .content .cont_bx p {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(210, 216, 241);
+    /* letter-spacing: 2px; */
+}
+header .content .cont_bx button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid #000;
+    background:#000;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+}
+header .content .cont_bx button:hover{
+    background: rgb(113,113,113);
+    border: 2px solid rgb(113,113,113);
+
+}
+header .trip_bx{
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    /* border: 1px solid #000; */
+}
+header .trip_bx .search_bx{
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    width: 60%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    /* border: 5px solid black; */
+    box-shadow: 10px 10px 25px rgba(14, 162, 182, 0.911);
+    z-index: 1;
+    padding: 10px 20px;
+    /* background: black; */
+    border-radius: 5px;
+}
+header .trip_bx .search_bx .card{
+    width: 200px;
+    /* height: 100%; */
+    /* border: 1px solid #000; */
+    border: none;
+}
+header .trip_bx .search_bx .card h4{
+    font-size: 15px;
+    margin: 0;
+    font-weight: 700;
+}
+header .trip_bx .search_bx .card h4 .bi{
+    position: absolute;
+    font-size: 13px;
+    margin: 2px 0px 0px 5px;
+    transition: .3s linear;
+}
+header .trip_bx .search_bx input{
+    margin-top: 3px;
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+}
+header .trip_bx .search_bx input[type="button"]{
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .3s linear;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+header .trip_bx .search_bx input[type="button"]:hover{
+    background: gray;
+}
+header .trip_bx .travel_bx{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    top: 40px;
+    /* background: #000; */
+    /* border: 1px solid #000; */
+    border-radius: 10px;
+    padding-bottom: 60px;
+    box-shadow: 0px 20px 25px -10px rgb(174, 198, 241);
+}
+header .trip_bx .travel_bx::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(192, 192, 196, 0.5); 
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+header .trip_bx .travel_bx h4 {
+    margin: 0;
+    padding: 60px 0px 15px 1.7%;
+}
+header .trip_bx .travel_bx .cards{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .trip_bx .travel_bx .cards .card{
+    width: 220px;
+    height: 180px;
+    background: #f1f1f1;
+    /* border: 1px solid #000; */
+    border: none;
+}
+header .trip_bx .travel_bx .cards .card h3{
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+header .trip_bx .travel_bx .cards .card img{
+    width: 100%;
+    height: 70%;
+    
+    /* border-radius: 0px 15px; */
+}
+header .trip_bx .travel_bx .cards .card .btn_city{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* border: 1px solid #000; */
+}
+header .trip_bx .travel_bx .cards .card .btn_city a{
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 6px 20px;
+    font-size: 14px;
+    transition: linear 0.3s;
+
+}
+header .trip_bx .travel_bx .cards .card .btn_city a:hover{
+    background: grey;
+}
+header .trip_bx .travel_bx .cards .card .btn_city h5{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 5px;
+
+    line-height: 15px;
+    /* border: 1px solid black; */
+}
+header .trip_bx .travel_bx .cards .card .btn_city h5 span{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.offers {
+    width: 90%;
+    height: auto;
+    /* border: 1px solid #000; */
+    margin: auto;
+    margin-top: 100px;
+}
+.offers h1{
+    font-weight: 900;
+    text-align: center;
+    /* margin: 0; */
+    padding-top: 130px;
+}
+.offers p {
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 5px;
+}
+.offers .cards {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    flex-wrap: wrap;
+    
+}
+.offers .cards .card {
+    position: relative;
+    width: 230px;
+    height: 350px;
+    /* border: 1px solid black; */
+    border: none;
+    /* margin-top: 10px; */
+}
+.offers .cards .card h3{
+    width: 130px;
+    padding: 6px 0px;
+    background: rgb(96, 236, 119);
+    border-radius: 20px;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+
+}
+.offers .cards .card .img_text {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid black; */
+    margin-top: 15px;
+}
+.offers .cards .card .img_text img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.offers .cards .card .img_text h4 {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 400;
+    padding:  10px 15px;
+    bottom: 0;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+}
+.offers .cards .card .img_text h4::before {
+    content: '' ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(37, 37, 37);
+    filter: blur(5px);
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+.offers .cards .card .cont_bx {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #111111; */
+    padding: 15px 0px;
+    border-radius: 0px 0px 5px 5px;
+}
+.offers .cards .card .cont_bx .price .info_price {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    
+}
+.offers .cards .card .cont_bx .price .info_price a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .3 linear;
+    margin-right: 13px;
+}
+.offers .cards .card .cont_bx .price .info_price a:hover {
+    color: gray;
+}
+.offers .cards .card .cont_bx .price .info_price h4 {
+    margin: 0;
+    /* font-size: 17px; */
+    
+}
+.offers .cards .card .cont_bx .days {
+    color: #fff;
+    background: #3a3939;
+    font-size: 11px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3 linear;
+}
+.offers .cards .card .cont_bx .days:hover {
+    background: #5a5959;
+    color: #e0e0e0;
+    
+}
+.join_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 95%;
+    margin: auto;
+}
+
+.join_container {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    flex-wrap: wrap;
+    
+}
+
+.join_data,
+.subscribe_image {
+    width: 45%;
+}
+
+.join_data {
+    margin: auto;
+    text-align: center;
+    
+}
+
+.section_title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.join_description {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.join_form {
+    display: flex;
+    box-shadow: 0px 3px 20px -1px gray;
+    border-radius: 20px;
+    overflow: hidden;
+    /* Ensure the border-radius applies to the entire form */
+}
+
+.join_form input {
+    width: 70%;
+    padding: 20px 27px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 20px 0 0 20px;
+}
+
+.join_form button {
+    width: 30%;
+    /* Ensure button takes the remaining space */
+    padding: 20px;
+    background-color: #525151;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.join_form button:hover {
+    background-color: rgb(113, 113, 113);
+}
+
+.subscribe_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe_image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    /* Optional: to match the form's rounded corners */
+}
+
+footer {
+    background-color: rgb(244, 244, 245);
+}
+
+.col h5 {
+    color: #0f0f0f;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.col h5::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #5cece5;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.nav-link {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.text-body-secondary {
+    color: #6c757d !important;
+}
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    header nav .bi-three-dots {
+        display: block;
+    }
+
+    header .content .cont_bx {
+        width: 100%;
+        padding: 15px;
+    }
+
+    header .trip_bx .search_bx {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+}
